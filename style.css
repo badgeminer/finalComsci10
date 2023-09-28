@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: black;
+  color: white;
+}
+
+div.headder {
+  grid-area: header;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 7px;
+}
+div.info {
+  grid-area: info;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+}
+div.qna {
+  grid-area: qnas;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+}
+dt:before {
+  content: 'Q. ';
+}
+dd:before {
+  content: 'A. ';
+}
+canvas {
+  padding: 0px;
+}
