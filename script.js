@@ -180,12 +180,17 @@ class Enemy {
 }
 
 
-var entitys = {ee:new Enemy(0,0,1,"ee"),ea:new Enemy(0,1,1,"ea"),eb:new Enemy(1,0,2,"eb"),ec:new Enemy(1,1,2,"ec")}
+var entitys = {}
 
-function spawnEne
+function spawnEnemys() {
+    entitys = {}
+    for (let i = 0; i < 5; i++) {
+        entitys[`${i}E`] = new Enemy(getRandomArbitrary(0,12),getRandomArbitrary(0,12),getRandomArbitrary(2,10),`${i}E`)
+    }
+}
 
 function draw() {
-
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     for (let i = 0; i < 13; i++) {
         for (let j = 0; j < 13; j++) {
           ctx.fillStyle = `rgb(${Math.floor(25*((i+j)%2))}, ${Math.floor(25*((i+j)%2))}, ${Math.floor(25*((i+j)%2))})`;

@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+    
+
 </head>
     <!--https://orteil.dashnet.org/cookieclicker/img/icons.png -->
 <img src="icons.png" hidden id="icons">
+    <script src='/astar.js'></script>
 <body>
   <canvas id="game" width="100" height="100">
     Your browser does not support the HTML5 canvas tag.
   </canvas>
+  <button onclick="level++;spawnEnemys()">next level</button><button onclick="spawnEnemys()">refresh level</button>
   <script src="script.js"></script>
 
 </body>
